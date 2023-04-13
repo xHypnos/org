@@ -1,0 +1,21 @@
+.container__equipo{
+    width: 100%;
+    padding: 32px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.container__equipo h3{
+    font-family: 'Prata', serif;
+    font-weight: 400;
+    font-size: 26px;
+    border-bottom: 2px solid;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.colaboradores{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}

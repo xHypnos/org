@@ -1,0 +1,22 @@
+.container__miorg{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__miorg h3{
+    font-family: 'Prata', serif;
+    color: #6278F7;
+    font-size: 28px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    border-bottom: 2px solid;
+}
+
+.container__miorg img{
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+    width: 80px;
+}
