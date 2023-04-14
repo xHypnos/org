@@ -3,7 +3,7 @@ import "./ListaOpciones.css";
 const ListaOpciones = (props) => {
     const seleccionarEquipo = (e) =>{
         props.actualizar(e.target.value);
-        console.log(e.target.value);
+        /* console.log(e.target.value); */
     }
 
     return <div className="container__opciones">

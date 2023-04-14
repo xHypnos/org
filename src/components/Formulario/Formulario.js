@@ -10,6 +10,8 @@ const Formulario = (props) => {
     const [foto, setFoto] = useState("");
     const [equipo, setEquipo] = useState("");
 
+    const { registrarColaborador} = props;
+
     const crearColaborador = (event) => {
         event.preventDefault();
 
@@ -20,7 +22,7 @@ const Formulario = (props) => {
             equipo: equipo
         }
 
-        console.log(datosFormulario);
+        registrarColaborador(datosFormulario);        
     };
 
     return <section className="container__formulario">

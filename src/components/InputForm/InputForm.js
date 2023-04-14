@@ -3,7 +3,7 @@ import "./InputForm.css";
 const InputForm = (props) => {
     const manejarCambio = (e) => {
         props.actualizar(e.target.value);
-        console.log(e.target.value);
+        /* console.log(e.target.value); */
     }
 
     return <div className="container__input">

@@ -7,9 +7,15 @@ import Equipo from './components/Equipo/Equipo';
 
 function App() {
   const [estadoFormulario, actualizarEstadoFormulario] = useState(true);
+  const [colaboradores, setColaboradores] = useState([]);
 
   const cambiarEstadoFormulario = () =>{
     actualizarEstadoFormulario(!estadoFormulario);
+  };
+
+  //Registrar colaborador
+  const registrarColaborador = (colaborador) =>{
+    setColaboradores([...colaboradores, colaborador]);
   };
 
   const listaEquipos = [
@@ -54,14 +60,23 @@ function App() {
     <div className="App">
       <Header/>
       {/* { estadoFormulario === true ? <Formulario/> : <></> } */}
-      {estadoFormulario && <Formulario equipos={listaEquipos.map((equipo) => equipo.titulo)}/>}
+      {
+        estadoFormulario && <Formulario 
+          equipos={listaEquipos.map((equipo) => equipo.titulo)}
+          registrarColaborador = {registrarColaborador}
+      />
+      }
+
       <MiOrg cambiarEstado = {cambiarEstadoFormulario}/>
       {
         listaEquipos.map((equipo, i) =>{
-        return <Equipo 
-        key = {equipo.titulo}
-        datos = {equipo}
-        />
+          return <Equipo 
+          key = {equipo.titulo}
+          datos = {equipo}
+          colaboradores = {
+            colaboradores.filter(colaborador => 
+            colaborador.equipo === equipo.titulo)}
+          />
       })}
     </div>
   );
