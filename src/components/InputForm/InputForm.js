@@ -1,17 +1,21 @@
 import "./InputForm.css";
 
 const InputForm = (props) => {
+
+    const {titulo, type, placeholder, required, valor, actualizar} = props;
+
     const manejarCambio = (e) => {
-        props.actualizar(e.target.value);
+        actualizar(e.target.value);
         /* console.log(e.target.value); */
     }
 
     return <div className="container__input">
-        <label>{props.titulo}</label>
+        <label>{titulo}</label>
         <input 
-            placeholder={props.placeholder} 
-            required={props.required} 
-            value={props.valor}
+            type={type}
+            placeholder={placeholder} 
+            required={required} 
+            value={valor}
             onChange={manejarCambio}
         />
     </div>

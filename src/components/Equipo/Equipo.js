@@ -3,8 +3,8 @@ import Colaborador from "../Colaborador/Colaborador";
 import hexToRgba from 'hex-to-rgba';
 
 const Equipo = (props) => {
-    const {titulo, colorPrimario} = props.datos;
-    const {colaboradores, eliminarColaborador, actualizarColor} = props;
+    const {titulo, colorPrimario, id} = props.datos;
+    const {colaboradores, eliminarColaborador, actualizarColor, like} = props;
 
     return <>
     { colaboradores.length > 0 &&
@@ -14,7 +14,7 @@ const Equipo = (props) => {
             type="color"
             value = {colorPrimario}
             onChange={(evento)=>{
-                actualizarColor(evento.target.value, titulo)
+                actualizarColor(evento.target.value, id)
             }}
         />
         <h3 style={{borderColor: colorPrimario}}>{titulo}</h3>
@@ -24,9 +24,9 @@ const Equipo = (props) => {
                 <Colaborador
                 datos = {colaborador}
                 key = {i}
-                id = {i}
                 colorPrimario = {colorPrimario}
                 eliminarColaborador = {eliminarColaborador}
+                like = {like}
                 />) 
             }
         </div>

@@ -1,74 +1,97 @@
 [
-    {
+    {   
+        "id": 0,
         "nombre": "Wilson Montes",
         "puesto": "Desarrollador React",
         "foto": "https://avatars.githubusercontent.com/u/4267777?v=4",
-        "equipo": "Front-End"
+        "equipo": "Front-End",
+        "fav": true
     },
     {
         "nombre": "Squirtle",
         "puesto": "Diseñador",
         "foto": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png",
-        "equipo": "UX y Diseño"
+        "equipo": "UX y Diseño",
+        "fav": false
     },
-    {
+    {   
+        "id": 2,
         "nombre": "Pikachu",
         "puesto": "Desarrollador iOS",
         "foto": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png",
-        "equipo": "Móvil"
+        "equipo": "Móvil",
+        "fav": false
     },
-    {
+    {   
+        "id": 3,
         "nombre": "Denji",
         "puesto": "Diseñador",
         "foto": "https://www.geekmi.news/__export/1671570613732/sites/debate/img/2022/12/20/denji-chainsaw-man-mappa.jpg_423682103.jpg",
-        "equipo": "UX y Diseño"
+        "equipo": "UX y Diseño",
+        "fav": false
     },
     {
+        "id": 4,
         "nombre": "Makima",
         "puesto": "Directora",
         "foto": "https://i.pinimg.com/originals/03/63/78/03637812e10b069d20c13cea7eaf7559.jpg",
-        "equipo": "Innovación y Gestión"
+        "equipo": "Innovación y Gestión",
+        "fav": false
     },
     {
+        "id": 5,
         "nombre": "Monkey D. Luffy",
         "puesto": "Database Admin y Futuro Rey de los piratas",
         "foto": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Monkey_D_Luffy.jpg",
-        "equipo": "Data Science"
+        "equipo": "Data Science",
+        "fav": false
     },
     {
+        "id": 6,
         "nombre": "Tanjiro",
         "puesto": "Seguridad e Integracion",
         "foto": "https://www.geekmi.news/__export/1674859893022/sites/debate/img/2023/01/27/tanjiro-kny.jpeg_423682103.jpeg",
-        "equipo": "Devops"
+        "equipo": "Devops",
+        "fav": false
     },
     {
+        "id": 7,
         "nombre": "Levi Ackerman",
         "puesto": "Desarrollador Android",
         "foto": "https://pbs.twimg.com/profile_images/1368549872044015616/s8ILMKwZ_400x400.jpg",
-        "equipo": "Móvil"
+        "equipo": "Móvil",
+        "fav": false
     },
     {
+        "id": 8,
         "nombre": "Rem",
         "puesto": "Desarrolladora Angular",
         "foto": "https://www.geekmi.news/__export/1656175240504/sites/debate/img/2022/06/25/rem1.jpg_423682103.jpg",
-        "equipo": "Front-End"
+        "equipo": "Front-End",
+        "fav": false
     },
-    {
+    {   
+        "id": 9,
         "nombre": "Ram",
-        "puesto": "Desarrolladora Vue",
+        "puesto": "Desarrolladora Vuejs",
         "foto": "https://i.pinimg.com/474x/3c/9e/f7/3c9ef78961023c6d82f4fe12d33826b8.jpg",
-        "equipo": "Front-End"
+        "equipo": "Front-End",
+        "fav": false
     },
     {
+        "id": 10,
         "nombre": "Rick",
         "puesto": "Desarrollador Back-End",
         "foto": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/rick-and-morty-image-1662104014.jpg?crop=0.315xw:0.560xh;0.351xw,0.168xh&resize=480:*",
-        "equipo": "Programación"
+        "equipo": "Programación",
+        "fav": false
     },
     {
+        "id": 11,
         "nombre": "Morty",
         "puesto": "Desarrollador Back-End",
         "foto": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/365e5edb-7b7f-415a-81c7-a848936e9e38.__CR0,0,300,300_PT0_SX300_V1___.jpg",
-        "equipo": "Programación"
+        "equipo": "Programación",
+        "fav": false
     }
 ]

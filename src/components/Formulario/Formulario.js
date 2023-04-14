@@ -10,7 +10,10 @@ const Formulario = (props) => {
     const [foto, setFoto] = useState("");
     const [equipo, setEquipo] = useState("");
 
-    const { registrarColaborador} = props;
+    const [titulo, setTitulo] = useState("");
+    const [color, setColor] = useState("#89DFD9");
+
+    const { registrarColaborador, registrarEquipo} = props;
 
     const crearColaborador = (event) => {
         event.preventDefault();
@@ -25,10 +28,22 @@ const Formulario = (props) => {
         registrarColaborador(datosFormulario);        
     };
 
+    const crearEquipo = (event) => {
+        event.preventDefault();
+
+        let datosEquipo = {
+            titulo: titulo,
+            colorPrimario: color
+        }
+
+        registrarEquipo(datosEquipo); 
+    };
+
     return <section className="container__formulario">
         <form className="formulario" onSubmit={crearColaborador}>
         <h2>Rellena el formulario para crear el colaborador.</h2>
             <InputForm 
+                type="text"
                 titulo="Nombre"
                 placeholder="Ingresar nombre" 
                 required
@@ -36,6 +51,7 @@ const Formulario = (props) => {
                 actualizar={setNombre}
                 />
             <InputForm 
+                type="text"
                 titulo="Puesto" 
                 placeholder="Ingresar puesto" 
                 required
@@ -43,6 +59,7 @@ const Formulario = (props) => {
                 actualizar={setPuesto}
                 />
             <InputForm 
+                type="text"
                 titulo="Foto" 
                 placeholder="Ingresar enlace de foto" 
                 required
@@ -55,6 +72,26 @@ const Formulario = (props) => {
                 actualizar={setEquipo}
             />
             <Boton texto="Crear"/>
+        </form>
+        <form className="formulario" onSubmit={crearEquipo}>
+        <h2>Rellena el formulario para crear el Equipo.</h2>
+            <InputForm 
+                type="text"
+                titulo="Titulo"
+                placeholder="Ingresar titulo" 
+                required
+                valor={titulo}
+                actualizar={setTitulo}
+                />
+            <InputForm
+                type="color"
+                titulo="Color" 
+                placeholder="Ingresar color hexagesimal" 
+                required
+                valor={color}
+                actualizar={setColor}
+                />
+            <Boton texto="Registrar Equipo"/>
         </form>
     </section>
 }

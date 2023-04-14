@@ -19,3 +19,8 @@
     font-size: 16px;
     box-sizing: border-box;
 }
+
+.container__input input[type="color"]{
+    padding: 0;
+    height: 50px;
+}

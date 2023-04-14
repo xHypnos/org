@@ -3,6 +3,11 @@
     margin-bottom: 24px;
     box-sizing: border-box;
     position: relative;
+    transition: 400ms;
+}
+
+.container__colaborador:hover{
+    transform: scale(1.1);
 }
 
 .container__colaborador .encabezado{
@@ -30,7 +35,7 @@
 
 .container__colaborador .info{
     background: #ffffff; 
-    padding: 80px 0 20px;
+    padding: 80px 0 10px;
     border-radius: 0 0 10px 10px;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.08);
 }
@@ -51,4 +56,15 @@
     padding: 0 24px;
     font-weight: 400;
     margin: 0;
+}
+
+.like__btn{
+    cursor: pointer;
+    margin: 5px;
+    font-size: 20px;
+    transition: 200ms;
+}
+
+.like__btn:active{
+    transform: scale(1.5);
 }
