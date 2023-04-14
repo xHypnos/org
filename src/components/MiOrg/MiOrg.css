@@ -20,3 +20,10 @@
     cursor: pointer;
     width: 80px;
 }
+
+@media screen and (min-width: 1080px) {
+    .container__miorg{
+        width: 1080px;
+        position: relative;
+    }
+}

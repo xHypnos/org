@@ -19,3 +19,10 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
+@media screen and (min-width: 1080px) {
+    .colaboradores{
+        width: 1080px;
+        margin: auto;
+    }
+}

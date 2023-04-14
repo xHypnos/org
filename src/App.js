@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Formulario from './components/Formulario/Formulario';
 import MiOrg from './components/MiOrg/MiOrg';
 import Equipo from './components/Equipo/Equipo';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const datos = require("./colaboradores.json");
@@ -79,6 +80,8 @@ function App() {
             colaborador.equipo === equipo.titulo)}
           />
       })}
+
+      <Footer/>
     </div>
   );
 }
