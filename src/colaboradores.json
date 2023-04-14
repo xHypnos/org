@@ -1,8 +1,74 @@
 [
     {
         "nombre": "Wilson Montes",
-        "puesto": "Desarrollador",
+        "puesto": "Desarrollador React",
         "foto": "https://avatars.githubusercontent.com/u/4267777?v=4",
         "equipo": "Front-End"
+    },
+    {
+        "nombre": "Squirtle",
+        "puesto": "Diseñador",
+        "foto": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png",
+        "equipo": "UX y Diseño"
+    },
+    {
+        "nombre": "Pikachu",
+        "puesto": "Desarrollador iOS",
+        "foto": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png",
+        "equipo": "Móvil"
+    },
+    {
+        "nombre": "Denji",
+        "puesto": "Diseñador",
+        "foto": "https://www.geekmi.news/__export/1671570613732/sites/debate/img/2022/12/20/denji-chainsaw-man-mappa.jpg_423682103.jpg",
+        "equipo": "UX y Diseño"
+    },
+    {
+        "nombre": "Makima",
+        "puesto": "Directora",
+        "foto": "https://i.pinimg.com/originals/03/63/78/03637812e10b069d20c13cea7eaf7559.jpg",
+        "equipo": "Innovación y Gestión"
+    },
+    {
+        "nombre": "Monkey D. Luffy",
+        "puesto": "Database Admin y Futuro Rey de los piratas",
+        "foto": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Monkey_D_Luffy.jpg",
+        "equipo": "Data Science"
+    },
+    {
+        "nombre": "Tanjiro",
+        "puesto": "Seguridad e Integracion",
+        "foto": "https://www.geekmi.news/__export/1674859893022/sites/debate/img/2023/01/27/tanjiro-kny.jpeg_423682103.jpeg",
+        "equipo": "Devops"
+    },
+    {
+        "nombre": "Levi Ackerman",
+        "puesto": "Desarrollador Android",
+        "foto": "https://pbs.twimg.com/profile_images/1368549872044015616/s8ILMKwZ_400x400.jpg",
+        "equipo": "Móvil"
+    },
+    {
+        "nombre": "Rem",
+        "puesto": "Desarrolladora Angular",
+        "foto": "https://www.geekmi.news/__export/1656175240504/sites/debate/img/2022/06/25/rem1.jpg_423682103.jpg",
+        "equipo": "Front-End"
+    },
+    {
+        "nombre": "Ram",
+        "puesto": "Desarrolladora Vue",
+        "foto": "https://i.pinimg.com/474x/3c/9e/f7/3c9ef78961023c6d82f4fe12d33826b8.jpg",
+        "equipo": "Front-End"
+    },
+    {
+        "nombre": "Rick",
+        "puesto": "Desarrollador Back-End",
+        "foto": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/rick-and-morty-image-1662104014.jpg?crop=0.315xw:0.560xh;0.351xw,0.168xh&resize=480:*",
+        "equipo": "Programación"
+    },
+    {
+        "nombre": "Morty",
+        "puesto": "Desarrollador Back-End",
+        "foto": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/365e5edb-7b7f-415a-81c7-a848936e9e38.__CR0,0,300,300_PT0_SX300_V1___.jpg",
+        "equipo": "Programación"
     }
 ]

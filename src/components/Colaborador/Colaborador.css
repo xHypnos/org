@@ -1,17 +1,17 @@
 .container__colaborador{
-    width: 260px;
+    width: 220px;
     margin-bottom: 24px;
     box-sizing: border-box;
 }
 
 .container__colaborador .encabezado{
     background: #57C278;
-    height: 90px;
+    height: 100px;
     border-radius: 10px 10px 0 0;
 }
 
 .container__colaborador img{
-    width: 120px;
+    width: 140px;
     border-radius: 50%;
     position: relative;
     bottom: -30%;

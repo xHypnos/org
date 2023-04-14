@@ -6,8 +6,9 @@ import MiOrg from './components/MiOrg/MiOrg';
 import Equipo from './components/Equipo/Equipo';
 
 function App() {
+  const datos = require("./colaboradores.json");
   const [estadoFormulario, actualizarEstadoFormulario] = useState(true);
-  const [colaboradores, setColaboradores] = useState([]);
+  const [colaboradores, setColaboradores] = useState(datos);
 
   const cambiarEstadoFormulario = () =>{
     actualizarEstadoFormulario(!estadoFormulario);
