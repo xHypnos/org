@@ -5,22 +5,14 @@ import Formulario from './components/Formulario/Formulario';
 import MiOrg from './components/MiOrg/MiOrg';
 import Equipo from './components/Equipo/Equipo';
 import Footer from './components/Footer/Footer';
+import hexToRgba from 'hex-to-rgba';
 
 function App() {
   const datos = require("./colaboradores.json");
+
   const [estadoFormulario, actualizarEstadoFormulario] = useState(true);
   const [colaboradores, setColaboradores] = useState(datos);
-
-  const cambiarEstadoFormulario = () =>{
-    actualizarEstadoFormulario(!estadoFormulario);
-  };
-
-  //Registrar colaborador
-  const registrarColaborador = (colaborador) =>{
-    setColaboradores([...colaboradores, colaborador]);
-  };
-
-  const listaEquipos = [
+  const [listaEquipos, setListaEquipos] = useState([
     {
       titulo: "Programación",
       colorPrimario: "#57C278",
@@ -56,7 +48,33 @@ function App() {
       colorPrimario: "#FF8A29",
       colorSecundario: "#FFEEDF"
     },
-  ]
+  ]);
+
+  const cambiarEstadoFormulario = () =>{
+    actualizarEstadoFormulario(!estadoFormulario);
+  };
+
+  //Registrar colaborador
+  const registrarColaborador = (colaborador) =>{
+    setColaboradores([...colaboradores, colaborador]);
+  };
+
+  //Eliminar colaborador
+  const eliminarColaborador = (key) =>{
+    console.log("colaborador: ", key);
+    /* setColaboradores(colaboradores.shift(key)); */
+  };
+
+  //Actualizar color equipos
+  const actualizarColor = (color, titulo) =>{
+    const equiposActualizados = listaEquipos.map((equipo) => {
+      if(equipo.titulo === titulo){
+        equipo.colorPrimario = color;
+      } 
+      return equipo;
+    })
+    setListaEquipos(equiposActualizados)
+  }
 
   return (
     <div className="App">
@@ -78,6 +96,8 @@ function App() {
           colaboradores = {
             colaboradores.filter(colaborador => 
             colaborador.equipo === equipo.titulo)}
+          eliminarColaborador = {eliminarColaborador}
+          actualizarColor = {actualizarColor}
           />
       })}
 

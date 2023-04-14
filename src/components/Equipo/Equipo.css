@@ -3,6 +3,13 @@
     padding: 32px;
     box-sizing: border-box;
     text-align: center;
+    position: relative;
+}
+
+.input-color{
+    position: absolute;
+    top: 20px;
+    right: 50px;
 }
 
 .container__equipo h3{
